@@ -1,0 +1,7 @@
+function People(name)
+	self = {}
+	loacl function init()
+		self.name = name
+	end
+	init()
+end

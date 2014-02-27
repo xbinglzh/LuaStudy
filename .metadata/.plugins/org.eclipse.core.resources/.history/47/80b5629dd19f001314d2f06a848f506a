@@ -1,0 +1,33 @@
+function People(name)
+	self = {}
+	
+	local function init()
+		self.name = name
+	end
+	
+	function sayPeople(var)
+		print("say --->"..self.name..var) 
+	end
+	
+	init()
+	return self
+end
+
+function Man(name)
+  self = People(name)
+  
+  function sayPeople(var)
+  	print("man say People :"..self.name..var)
+  end
+  
+  function sayMan(var)
+  	print("man say --->"..self.name..var)
+  end
+  
+  return self
+	
+end
+
+
+man = Man("zhang san")
+man:sayPeople("xxxxxx")

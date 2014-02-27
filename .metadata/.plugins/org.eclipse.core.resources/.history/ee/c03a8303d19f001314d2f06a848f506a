@@ -1,0 +1,9 @@
+function People(name)
+	self = {}
+	
+	local function init()
+		self.name = name
+	end
+	
+	init()
+end
